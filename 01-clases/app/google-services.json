@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "138927517173",
+    "project_id": "jjtt-2024a-cc-gr1",
+    "storage_bucket": "jjtt-2024a-cc-gr1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:138927517173:android:c16baf1e021e46893f84bc",
+        "android_client_info": {
+          "package_name": "com.example.a2024accgr1jjtt"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6oH-Pt18VYkE5b5bXTv0QDzwE02-U8Pc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

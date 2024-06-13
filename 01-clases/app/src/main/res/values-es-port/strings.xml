@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="condiciones">PORTRAIT ESPAÑOL</string>
+    <color name="textoColor">#106113</color>
+    <color name="fondoColor">#86E696</color>
+</resources>

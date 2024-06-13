@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="condiciones">LANDSCAPE ENGLISH</string>
+    <color name="textoColor">#808EDA</color>
+    <color name="fondoColor">#DFBF6A</color>
+</resources>

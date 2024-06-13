@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="condiciones">PORTRAIT ENGLISH</string>
+    <color name="textoColor">#DF4515</color>
+    <color name="fondoColor">#AD9ACD</color>
+</resources>

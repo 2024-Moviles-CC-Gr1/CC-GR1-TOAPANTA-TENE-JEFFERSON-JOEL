@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="condiciones">LANDSCAPE ESPAÑOL</string>
+    <color name="textoColor">#0A23AC</color>
+    <color name="fondoColor">#89C8C2</color>
+</resources>

@@ -9,13 +9,12 @@ fun main() {
 
     loop@ while (true) {
         println("\n--- Programa CRUD (Equipo Futbol - Jugador) ---")
-        print("Ingrese el numero correspondiente a su opcion: ")
         println("1. Crear")
         println("2. Leer")
         println("3. Actualizar")
         println("4. Eliminar")
         println("5. Finalizar Programa CRUD")
-
+        print("Ingrese el numero correspondiente a su opcion: ")
 
         when (scanner.nextInt()) {
             1 -> submenuCrear(equiposFutbol, jugadores, scanner)
@@ -105,7 +104,7 @@ fun submenuCrear(equiposFutbol: MutableList<Equipo_Futbol>, jugadores: MutableLi
         2 -> {
             val nuevoEquipoFutbol = crearEquipoFutbol(equiposFutbol, jugadores, scanner)
             equiposFutbol.add(nuevoEquipoFutbol)
-            println("Equipos de Futbol creado con exito.")
+            println("Equipo de Futbol creado con exito.")
         }
         else -> println("Opcion invalida. Por favor intente de nuevo.")
     }
@@ -250,7 +249,7 @@ fun crearEquipoFutbol(equiposFutbol: MutableList<Equipo_Futbol>, jugadores: Muta
     val federacion = scanner.next()
     print("Edad media: ")
     val edadMedia = scanner.nextDouble()
-    print("Numero (cantidad) de trofeos")
+    print("Numero (cantidad) de trofeos: ")
     val numeroTrofeos = scanner.nextInt()
     print("Fecha del proximo juego (yyyy-MM-dd): ")
     val fechaProximoJuegoString = scanner.next()
@@ -382,7 +381,7 @@ fun actualizarInformacionEquipoFutbol(equipoFutbol: Equipo_Futbol, jugadores: Mu
     print("Nueva Edad media: ")
     val nuevaEdadMedia = scanner.nextDouble()
     equipoFutbol.edadMedia = nuevaEdadMedia
-    print("Nuevo Numero (cantidad) de trofeos")
+    print("Nuevo Numero (cantidad) de trofeos: ")
     val nuevoNumeroTrofeos = scanner.nextInt()
     equipoFutbol.numeroTrofeos = nuevoNumeroTrofeos
     print("Nueva Fecha del proximo juego (yyyy-MM-dd): ")

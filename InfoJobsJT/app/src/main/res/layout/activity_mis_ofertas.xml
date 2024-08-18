@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_mis_ofertas">
+
+    <ScrollView
+        android:layout_width="413dp"
+        android:layout_height="43dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        tools:layout_editor_absoluteX="-2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mis ofertas"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="0dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="412dp"
+        android:layout_height="582dp"
+        android:background="#FFFEFF"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="43dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="352dp"
+                    android:layout_height="372dp"
+                    app:srcCompat="@drawable/guardadas"
+                    tools:layout_editor_absoluteX="29dp"
+                    tools:layout_editor_absoluteY="95dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No tienes ofertas guardadas"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="77dp"
+                    tools:layout_editor_absoluteY="0dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="297dp"
+                    android:layout_height="74dp"
+                    android:text="Aquí aparecerán las ofertas guardadas para poder leerlas más tarde"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="57dp"
+                    tools:layout_editor_absoluteY="0dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="106dp"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="625dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="61dp"
+                    android:layout_height="63dp"
+                    app:srcCompat="@drawable/searchicon"
+                    tools:layout_editor_absoluteX="44dp"
+                    tools:layout_editor_absoluteY="21dp" />
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="68dp"
+                    android:layout_height="62dp"
+                    app:srcCompat="@drawable/offericon"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="20dp" />
+
+                <ImageButton
+                    android:id="@+id/imageButton4"
+                    android:layout_width="56dp"
+                    android:layout_height="66dp"
+                    app:srcCompat="@drawable/cvicon"
+                    tools:layout_editor_absoluteX="291dp"
+                    tools:layout_editor_absoluteY="20dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

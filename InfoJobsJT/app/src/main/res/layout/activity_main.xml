@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#59FBF8F8"
+    android:backgroundTint="#8AA8A1A1"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="446dp"
+        android:layout_height="167dp"
+        android:background="#516D5370"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="-3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/imageButton10"
+                    android:layout_width="48dp"
+                    android:layout_height="51dp"
+                    app:srcCompat="@drawable/buscador1"
+                    tools:layout_editor_absoluteX="36dp"
+                    tools:layout_editor_absoluteY="10dp" />
+
+                <EditText
+                    android:id="@+id/editView"
+                    android:layout_width="385dp"
+                    android:layout_height="49dp"
+                    android:background="@drawable/referencia"
+                    android:drawableStart="@drawable/buscador1"
+                    android:paddingStart="25dp"
+                    android:paddingEnd="25dp"
+                    android:text="Puesto, empresa o palabra clave"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="29dp"
+                    tools:layout_editor_absoluteY="11dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="282dp"
+                    android:layout_height="54dp"
+                    android:text="Cualquier momento es bueno. Busca un nuevo trabajo"
+                    android:textColor="#3F51B5"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="166dp"
+                    tools:layout_editor_absoluteY="8dp" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="122dp"
+                    android:layout_height="95dp"
+                    tools:srcCompat="@tools:sample/avatars" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="445dp"
+        android:layout_height="119dp"
+        android:background="#FFFEFE"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="166dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SEGÚN TUS PREFERENCIAS"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EDITAR"
+                    android:textColor="#3F51B5"
+                    tools:layout_editor_absoluteX="384dp"
+                    tools:layout_editor_absoluteY="5dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="390dp"
+                    android:layout_height="93dp"
+                    app:srcCompat="@drawable/nohayoferta"
+                    tools:layout_editor_absoluteX="39dp"
+                    tools:layout_editor_absoluteY="1dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="446dp"
+        android:layout_height="426dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="303dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OFERTAS RECOMENDADAS"
+                    android:textSize="18dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="444dp"
+                    android:layout_height="144dp"
+                    app:srcCompat="@drawable/oferta1"
+                    tools:layout_editor_absoluteX="1dp"
+                    tools:layout_editor_absoluteY="-1dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="446dp"
+                    android:layout_height="171dp"
+                    app:srcCompat="@drawable/oferta2"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="0dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="446dp"
+        android:layout_height="102dp"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="627dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="63dp"
+                    android:layout_height="56dp"
+                    app:srcCompat="@drawable/searchicon"
+                    tools:layout_editor_absoluteX="73dp"
+                    tools:layout_editor_absoluteY="18dp" />
+
+                <ImageButton
+                    android:id="@+id/imageButton5"
+                    android:layout_width="62dp"
+                    android:layout_height="58dp"
+                    app:srcCompat="@drawable/offericon"
+                    tools:layout_editor_absoluteX="192dp"
+                    tools:layout_editor_absoluteY="16dp" />
+
+                <ImageButton
+                    android:id="@+id/imageButton6"
+                    android:layout_width="54dp"
+                    android:layout_height="61dp"
+                    app:srcCompat="@drawable/cvicon"
+                    tools:layout_editor_absoluteX="320dp"
+                    tools:layout_editor_absoluteY="16dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

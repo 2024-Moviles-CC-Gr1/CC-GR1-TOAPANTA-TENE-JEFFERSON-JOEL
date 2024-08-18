@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="labelDeporte" type="id" />
+    <item name="labelNombre" type="id" />
+    <item name="labelEdad" type="id" />
+    <item name="labelAltura" type="id" />
+    <item name="update_switchCampeonActualEquipo" type="id" />
+    <item name="update_numeroTrofeosEquipo" type="id" />
+    <item name="update_fechaProximoJuegoEquipo" type="id" />
+    <item name="update_edadMediaEquipo" type="id" />
+    <item name="update_federacionEquipo" type="id" />
+    <item name="update_paisEquipo" type="id" />
+    <item name="update_nombreEquipo" type="id" />
+    <item name="txt_fecha_nacimiento_jugador" type="id" />
+    <item name="txt_lesion_jugador" type="id" />
+    <item name="editTextFechaProximoJuegoEquipo" type="id" />
+    <item name="tvFechaNacimientoJugador" type="id" />
+    <item name="tvLesionJugador" type="id" />
+    <item name="action_edit_equipo_futbol" type="id" />
+    <item name="action_delete_equipo_futbol" type="id" />
+    <item name="tvPaisEquipo" type="id" />
+    <item name="tvFederacionEquipo" type="id" />
+    <item name="tvEdadMediaEquipo" type="id" />
+    <item name="tvNumeroTrofeosEquipo" type="id" />
+    <item name="tvFechaProximoJuegoEquipo" type="id" />
+    <item name="tvCampeonActualEquipo" type="id" />
+</resources>

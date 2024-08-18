@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EquipoFutbol">
+
+    <!-- Team Name -->
+    <EditText
+        android:id="@+id/editTextNombreEquipo"
+        android:layout_width="235dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:hint="Nombre del Equipo"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txtViewEquipo"
+        app:layout_constraintHorizontal_bias="0.603"
+        app:layout_constraintStart_toStartOf="@+id/txtViewEquipo"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewEquipo"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <!-- Country -->
+    <EditText
+        android:id="@+id/editTextPaisEquipo"
+        android:layout_width="235dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:hint="País"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextNombreEquipo"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextNombreEquipo"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNombreEquipo"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <!-- Federation -->
+    <EditText
+        android:id="@+id/editTextFederacionEquipo"
+        android:layout_width="235dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:hint="Federación"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPaisEquipo"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="@+id/editTextPaisEquipo"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPaisEquipo"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <!-- Average Age -->
+    <EditText
+        android:id="@+id/editTextEdadMediaEquipo"
+        android:layout_width="233dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Edad Media"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextFederacionEquipo"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="@+id/editTextFederacionEquipo"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFederacionEquipo"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <!-- Number of Trophies -->
+    <EditText
+        android:id="@+id/editTextNumeroTrofeosEquipo"
+        android:layout_width="233dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Número de Trofeos"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextEdadMediaEquipo"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="@+id/editTextEdadMediaEquipo"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEdadMediaEquipo"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <!-- Current Champion Switch -->
+    <Switch
+        android:id="@+id/switchCampeonActualEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="¿Campeón Actual?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextNumeroTrofeosEquipo"
+        app:layout_constraintStart_toStartOf="@+id/editTextNumeroTrofeosEquipo"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumeroTrofeosEquipo"
+        app:layout_constraintVertical_bias="0.0"
+        tools:checked="false" />
+
+    <!-- Create Button -->
+    <Button
+        android:id="@+id/btnCrearEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Crear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/switchCampeonActualEquipo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/switchCampeonActualEquipo"
+        app:layout_constraintTop_toBottomOf="@+id/switchCampeonActualEquipo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/txtViewEquipo"
+        android:layout_width="169dp"
+        android:layout_height="32dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="EQUIPO DE FÚTBOL"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.091" />
+
+    <!-- ListView for showing teams -->
+    <ListView
+        android:id="@+id/listView_EquipoFutbol"
+        android:layout_width="373dp"
+        android:layout_height="249dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnCrearEquipo"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="@+id/btnCrearEquipo"
+        app:layout_constraintTop_toBottomOf="@+id/btnCrearEquipo"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

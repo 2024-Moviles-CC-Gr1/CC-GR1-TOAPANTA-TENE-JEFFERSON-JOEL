@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- Etiqueta ID Equipo -->
+    <TextView
+        android:id="@+id/labelIdEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID Equipo:"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Valor ID Equipo -->
+    <TextView
+        android:id="@+id/tvIdEquipo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/labelIdEquipo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/labelIdEquipo"/>
+
+    <!-- Etiqueta Nombre -->
+    <TextView
+        android:id="@+id/labelNombreEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Nombre del Equipo:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/labelIdEquipo"
+        app:layout_constraintTop_toBottomOf="@id/labelIdEquipo" />
+
+    <!-- Valor Nombre -->
+    <TextView
+        android:id="@+id/tvNombreEquipo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/labelNombreEquipo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/labelNombreEquipo"/>
+
+    <!-- Etiqueta País -->
+    <TextView
+        android:id="@+id/labelPais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="País:"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/labelNombreEquipo"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Valor País -->
+    <TextView
+        android:id="@+id/tvPais"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/labelPais"
+        app:layout_constraintTop_toTopOf="@id/labelPais" />
+
+    <!-- Etiqueta Federación -->
+    <TextView
+        android:id="@+id/labelFederacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Federación:"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/labelPais"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Valor Federación -->
+    <TextView
+        android:id="@+id/tvFederacion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/labelFederacion"
+        app:layout_constraintTop_toTopOf="@id/labelFederacion" />
+
+    <!-- Etiqueta Edad Media -->
+    <TextView
+        android:id="@+id/labelEdadMedia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edad Media:"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/labelFederacion"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Valor Edad Media -->
+    <TextView
+        android:id="@+id/tvEdadMedia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/labelEdadMedia"
+        app:layout_constraintTop_toTopOf="@id/labelEdadMedia" />
+
+    <!-- Etiqueta Número de Trofeos -->
+    <TextView
+        android:id="@+id/labelNumeroTrofeos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Número de Trofeos:"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/labelEdadMedia"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Valor Número de Trofeos -->
+    <TextView
+        android:id="@+id/tvNumeroTrofeos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/labelNumeroTrofeos"
+        app:layout_constraintTop_toTopOf="@id/labelNumeroTrofeos" />
+
+    <!-- Etiqueta Campeón Actual -->
+    <TextView
+        android:id="@+id/labelCampeonActual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Campeón Actual?:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/labelNumeroTrofeos"
+        app:layout_constraintTop_toBottomOf="@id/labelNumeroTrofeos" />
+
+    <!-- Valor Campeón Actual -->
+    <TextView
+        android:id="@+id/tvCampeonActual"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/labelCampeonActual"
+        app:layout_constraintTop_toTopOf="@id/labelCampeonActual" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

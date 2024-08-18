@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_edit_equipo"
+        android:title="Editar" />
+    <item
+        android:id="@+id/action_delete_equipo"
+        android:title="Eliminar" />
+    <item
+        android:id="@+id/action_ver_jugadores"
+        android:title="Ver Jugadores" />
+</menu>

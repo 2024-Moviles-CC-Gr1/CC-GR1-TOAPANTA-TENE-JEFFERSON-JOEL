@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "873589457633",
+    "project_id": "infojobsjt",
+    "storage_bucket": "infojobsjt.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873589457633:android:0e0fc29aeb9101e9562da0",
+        "android_client_info": {
+          "package_name": "com.example.infojobsjt"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEgUbuZkIAYlOQqsqBr2Kx-z-VxQuT2L8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

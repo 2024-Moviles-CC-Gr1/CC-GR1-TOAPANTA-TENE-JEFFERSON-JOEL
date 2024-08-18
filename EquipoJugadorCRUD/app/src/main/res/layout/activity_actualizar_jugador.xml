@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sport.equipojugadorcrud.ActualizarJugador">
+
+    <!-- Hidden field for Jugador ID -->
+    <EditText
+        android:id="@+id/update_id_jugador"
+        android:layout_width="96dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:hint="ID Jugador"
+        android:inputType="number"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/update_nombre_jugador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.382" />
+
+    <!-- Nombre -->
+    <EditText
+        android:id="@+id/update_nombre_jugador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="Nombre del Jugador"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/update_id_jugador"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/update_id_jugador"
+        app:layout_constraintTop_toBottomOf="@+id/update_id_jugador" />
+
+    <!-- Edad -->
+    <EditText
+        android:id="@+id/update_edad_jugador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Edad"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/update_nombre_jugador"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/update_nombre_jugador"
+        app:layout_constraintTop_toBottomOf="@+id/update_nombre_jugador" />
+
+    <!-- País -->
+    <EditText
+        android:id="@+id/update_pais_jugador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="País"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/update_edad_jugador"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/update_edad_jugador"
+        app:layout_constraintTop_toBottomOf="@+id/update_edad_jugador" />
+
+    <!-- Estatura -->
+    <EditText
+        android:id="@+id/update_estatura_jugador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Estatura (cm)"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/update_pais_jugador"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/update_pais_jugador"
+        app:layout_constraintTop_toBottomOf="@+id/update_pais_jugador" />
+
+    <!-- Fecha de Nacimiento -->
+    <EditText
+        android:id="@+id/update_fecha_nacimiento_jugador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Fecha de Nacimiento"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="@+id/update_estatura_jugador"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/update_estatura_jugador"
+        app:layout_constraintTop_toBottomOf="@+id/update_estatura_jugador" />
+
+    <!-- Lesión -->
+    <Switch
+        android:id="@+id/update_lesion_jugador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Lesionado?"
+        app:layout_constraintEnd_toEndOf="@+id/update_fecha_nacimiento_jugador"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/update_fecha_nacimiento_jugador"
+        app:layout_constraintTop_toBottomOf="@+id/update_fecha_nacimiento_jugador" />
+
+    <!-- Actualizar Button -->
+    <Button
+        android:id="@+id/btn_upd_jugador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="ACTUALIZAR JUGADOR"
+        app:layout_constraintEnd_toEndOf="@+id/update_lesion_jugador"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="@+id/update_lesion_jugador"
+        app:layout_constraintTop_toBottomOf="@+id/update_lesion_jugador" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="124dp"
+        android:layout_height="29dp"
+        android:text="Actualizar Jugador"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/update_id_jugador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.373" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

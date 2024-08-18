@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sport.equipojugadorcrud.VerJugadores">
+
+    <!-- ListView to display the list of Jugadores -->
+    <ListView
+        android:id="@+id/listView_jugador"
+        android:layout_width="409dp"
+        android:layout_height="569dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintEnd_toEndOf="@+id/ver_equipoPadre"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="@+id/ver_equipoPadre"
+        app:layout_constraintTop_toBottomOf="@+id/ver_equipoPadre" />
+
+    <!-- TextView to display the selected Equipo name -->
+    <TextView
+        android:id="@+id/ver_equipoPadre"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.082" />
+
+    <!-- Button to create a new Jugador -->
+    <Button
+        android:id="@+id/btn_crearJugador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:text="CREAR JUGADOR"
+        app:layout_constraintBottom_toBottomOf="@+id/ver_equipoPadre"
+        app:layout_constraintStart_toEndOf="@+id/ver_equipoPadre"
+        app:layout_constraintTop_toTopOf="@+id/ver_equipoPadre"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

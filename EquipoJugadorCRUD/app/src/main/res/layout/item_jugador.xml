@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- Etiqueta ID Jugador -->
+    <TextView
+        android:id="@+id/labelIdJugador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID Jugador:"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Valor ID Jugador -->
+    <TextView
+        android:id="@+id/tvIdJugador"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/labelIdJugador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/labelIdJugador"/>
+
+    <!-- Etiqueta Nombre -->
+    <TextView
+        android:id="@+id/labelNombreJugador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/labelIdJugador"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Valor Nombre -->
+    <TextView
+        android:id="@+id/tvNombreJugador"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/labelNombreJugador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/labelNombreJugador"/>
+
+    <!-- Etiqueta Edad -->
+    <TextView
+        android:id="@+id/labelEdadJugador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edad:"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/labelNombreJugador"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Valor Edad -->
+    <TextView
+        android:id="@+id/tvEdadJugador"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/labelEdadJugador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/labelEdadJugador"/>
+
+    <!-- Etiqueta País -->
+    <TextView
+        android:id="@+id/labelPaisJugador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="País:"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/labelEdadJugador"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Valor País -->
+    <TextView
+        android:id="@+id/tvPaisJugador"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/labelPaisJugador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/labelPaisJugador"/>
+
+    <!-- Etiqueta Estatura -->
+    <TextView
+        android:id="@+id/labelEstaturaJugador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estatura (cm):"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/labelPaisJugador" />
+
+    <!-- Valor Estatura -->
+    <TextView
+        android:id="@+id/tvEstaturaJugador"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/labelEstaturaJugador"
+        app:layout_constraintTop_toTopOf="@id/tvPaisJugador" />
+</androidx.constraintlayout.widget.ConstraintLayout>

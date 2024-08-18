@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".RegistrarVehiculo">
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="37dp"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="27dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registrar Vehículo"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="116dp"
+                    tools:layout_editor_absoluteY="0dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="412dp"
+        android:layout_height="344dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="68dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="67dp">
+
+                <EditText
+                    android:id="@+id/editTextText11"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/height"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="Name"
+                    tools:layout_editor_absoluteX="34dp"
+                    tools:layout_editor_absoluteY="5dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="62dp">
+
+                <EditText
+                    android:id="@+id/editTextText12"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/height"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="Name"
+                    tools:layout_editor_absoluteX="34dp"
+                    tools:layout_editor_absoluteY="0dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="63dp">
+
+                <EditText
+                    android:id="@+id/editTextText13"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/height"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="Name"
+                    tools:layout_editor_absoluteX="34dp"
+                    tools:layout_editor_absoluteY="0dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="62dp">
+
+                <EditText
+                    android:id="@+id/editTextText14"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/height"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="Name"
+                    tools:layout_editor_absoluteX="34dp"
+                    tools:layout_editor_absoluteY="0dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="62dp">
+
+                <EditText
+                    android:id="@+id/editTextText15"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/height"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="Name"
+                    tools:layout_editor_absoluteX="34dp"
+                    tools:layout_editor_absoluteY="0dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="412dp"
+        android:layout_height="82dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="422dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="346dp"
+                    android:layout_height="55dp"
+                    android:backgroundTint="@color/green"
+                    android:text="Guardar vehículo"
+                    android:textSize="24sp"
+                    tools:layout_editor_absoluteX="32dp"
+                    tools:layout_editor_absoluteY="0dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
